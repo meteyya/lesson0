@@ -1,0 +1,9 @@
+first = input (f'введите число 1: ')
+second = input (f'введите число 2: ')
+third = input (f'введите число 3: ')
+if first == second and second == third and third == first:
+    print(f"3")
+elif first == second or first == third:
+    print(f"2")
+else:
+    print(f"0")

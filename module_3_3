@@ -1,0 +1,19 @@
+#Функция с параметрами по умолчанию
+def print_params(a = 1, b = 'строка', c = True):
+    print (a, b, c)
+print_params()
+print_params(2)
+print_params(2, 'ddd')
+print_params(2, 'ddd', False)
+print_params(b = 25)
+print_params(c = [1,2,3])
+
+#Распаковка параметров
+values_list = [2, False, 'raspakovka']
+values_dict = {'a' : 4, 'b' : False, 'c': 'win-win'}
+print_params(*values_list)
+print_params(**values_dict)
+
+#Распаковка + отдельные параметры
+values_list_2 = [1, 'str']
+print_params(*values_list_2, 42)

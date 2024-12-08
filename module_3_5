@@ -1,0 +1,13 @@
+def get_multiplied_digits(number):
+    digits = str(number)
+    flag = 1
+    has_non_zero_digit = False
+    for digit in digits:
+        if digit != '0':
+            flag *= int(digit)
+            has_non_zero_digit = True
+    return flag if has_non_zero_digit else 0
+result = get_multiplied_digits(40203)
+print(result)
+result2 = get_multiplied_digits(402030)
+print(result2)
